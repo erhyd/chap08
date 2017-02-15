@@ -7,7 +7,7 @@
 	<artifactId>chap08</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
+	
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -35,8 +35,48 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- 1.  JSP precompiler -->
+		<dependency>
+		    <groupId>org.apache.tomcat.embed</groupId>
+		    <artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		<!--2. Cool Swapping & Livereload  -->
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+   			 <artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		<!--3. BootStrap  -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>bootstrap</artifactId>
+		    <version>3.3.7-1</version>
+		</dependency>
+		
+		<!--4. animate  -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>animate.css</artifactId>
+		    <version>3.5.2</version>
+		</dependency>
+		
+		<!--5. JSTL (JSP Standard Tag Library -->
+		<dependency>
+	    	<groupId>javax.servlet</groupId>
+	    	<artifactId>jstl</artifactId>
+		</dependency>
+		
+		<!--6. Spring Security(Authentication(인증) & Authorization(권한))  -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+		
+		
 	</dependencies>
-
+	
+	
+	
 	<build>
 		<plugins>
 			<plugin>
